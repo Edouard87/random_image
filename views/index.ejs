@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../stylesheets/index.css">
+    <link rel="stylesheet" href="../stylesheets/fonts.css">
+    <link rel="stylesheet" href="../stylesheets/settings.css">
+    <link rel="stylesheet" href="../stylesheets/checkbox.css">
+    <link rel="stylesheet" href="../stylesheets/dialogue.css">
+    <link rel="stylesheet" href="../stylesheets/welcome-menu.css">
+    <link rel="stylesheet" href="../stylesheets/help.css">
+    <script type="text/javascript" src="../libraries/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="../plugins/js.cookie.min.js"></script>
+    <script type="text/javascript" src="../scripts/dialogue.js"></script>
+    <script type="text/javascript" src="../scripts/images.js"></script>
+    <script type="text/javascript" src="../scripts/menu.js"></script>
+    <script type="text/javascript" src="../scripts/welcome-menu.js"></script>
+    <title>Random Image Generator</title>
+  </head>
+  <body>
+    <div id="options-wrapper" class="dialogue-wrapper">
+      <div class="overlay">
+      </div>
+      <div id="options" class="dialogue">
+        <div id="dialogue-exit-button" class="x-icon-wrapper">
+          <div class="x-icon-container">
+            <img src="../images/x-symbol.png" alt="">
+          </div>
+        </div>
+        <div class="dialogue-data">
+          <h2 class="dialogue-heading">Settings</h2>
+          <div id="setting-option-1" class="setting-option">
+            <div id="checkbox-random-image-container" class="checkbox-container">
+              <input type="checkbox" class="css-checkbox" id="checkbox-random-image" name="random-image"/>
+              <label for="checkbox-random-image" name="checkbox1_lbl" id="checkbox-random-image-label" class="css-label lite-green-check">Select Random Image to Display</label>
+            </div>
+            <div class="explanation">
+              When the generator finds an image to display, it will always display the first image it finds. With this option selected, it will display a random image each time.
+            </div>
+          </div>
+        </div>
+        <div id="save-changes" class="save-options-button dialogue-button">
+          <span>Save & Exit</span>
+        </div>
+      </div>
+    </div>
+    <div id="welcome-wrapper" class="dialogue-wrapper">
+      <div class="overlay">
+      </div>
+      <div id="welcome" class="small-dialogue">
+        <h2 class="dialogue-heading">Welcome!</h2>
+        <div id="welcome-menu-exit-button" class="x-icon-wrapper">
+          <div class="x-icon-container">
+            <img src="../images/x-symbol.png" alt="">
+          </div>
+        </div>
+        <div id="welcome-text" class="dialogue-data">
+          <h2>Welcome to the random image generator!</h2>
+          <p>It seems this is the first time you opened the app... Do you want to take a look at the tutorial?</p>
+        </div>
+        <div id="open-tutorial" class="open-tutorial-button dialogue-button">
+          <span>Open Help</span>
+        </div>
+        <div id="cancel-tutorial" class="cancel-tutorial-button dialogue-button">
+          <span>Cancel</span>
+        </div>
+      </div>
+    </div>
+    <div id="help-wrapper" class="dialogue-wrapper">
+      <div class="overlay">
+      </div>
+      <div class="dialogue">
+        <h2 class="dialogue-heading">Help</h2>
+        <div  class="x-icon-wrapper">
+          <div class="x-icon-container">
+            <img src="../images/x-symbol.png" alt="">
+          </div>
+        </div>
+        <div class="help-search-menu">
+          <div class="search-menu-content">
+            <div class="search-topic">
+              <span>How to use!</span>
+            </div>
+          </div>
+        </div>
+        <div class="help-article">
+          <iframe src="" width="" height=""></iframe>
+        </div>
+      </div>
+    </div>
+    <div class="menu-button">
+      <div class="menu-button-wrapper">
+        <img class="menu-icon" src="../images/menu-icon.png" alt="">
+      </div>
+    </div>
+    <div class="menu-slide-out">
+      <div id="menu-esc" class="x-icon-wrapper">
+        <div class="x-icon-container">
+          <img src="../images/x-symbol-esc.png" alt="">
+        </div>
+      </div>
+      <div class="menu-left">
+        <div class="menu-left-content">
+          <div class="menu-header">
+            <h1>Pretty Random Image Generator</h1>
+            <h2>By William and Edouard</h2>
+            <h3>Using Google Images</h3>
+          </div>
+          <div class="menu-options">
+            <hr>
+            <h3>Application Options</h3>
+            <hr>
+            <div id="settings" class="options-button">
+              <div id="settings-icon" class="options-button-image">
+              </div>
+              <div class="options-button-container">
+                <p>Settings</p>
+              </div>
+            </div>
+            <div id="information" class="options-button">
+              <div id="information-icon" class="options-button-image">
+              </div>
+              <div class="options-button-container">
+                <p>Information</p>
+              </div>
+            </div>
+            <div id="help" class="options-button">
+              <div id="help-icon" class="options-button-image">
+              </div>
+              <div class="options-button-container">
+                <p>Help</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-right">
+
+      </div>
+    </div>
+    <div class="main-page">
+      <div class="menu">
+        <h1>Pretty Random Image Generator</h1>
+        <h2>By William and Edouard</h2>
+        <h3>Using Google Images</h3>
+      </div>
+      <div class="image-generator">
+        <div class="panel-left panel">
+          <div id="loading-content" class="loading-wrapper">
+            <div class="loading">
+              <div class="content">
+                <h2>Retrieving Image</h2>
+                <img src="../images/rolling-icon-infinite.gif" alt="">
+                <h3>Please Wait</h3>
+              </div>
+            </div>
+          </div>
+        <img src="../images/intro-image.png" id="image-result"></img>
+        </div>
+        <div class="panel-right panel">
+          <h2>Genrate a Random Image!</h2>
+          <div class="input">
+            <div class="input-wrapper">
+              <input id="image-input" class="image-keyword-input" type="text" name="" placeholder="Enter a Keyword">
+              <div id="button" class="image-generate-button" type="button" name="button"><span class="button-content">Generate!</span></div>
+            </div>
+          </div>
+          <div class="button-tray">
+            <img id="left-arrow" class="icon-button" src="../images/arrow-left.png" alt="">
+            <img class="icon-button" src="../images/download-icon.png" alt="">
+            <img id="right-arrow" class="icon-button" src="../images/arrow-right.png" alt="">
+              <div class="right">
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <template id="settings-content">
+
+    </template>
+
+
+
+  </body>
+</html>
