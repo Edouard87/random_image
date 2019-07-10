@@ -1,0 +1,89 @@
+#welcome-text h2 {
+
+  font-size: 20px;
+  font-family: 'Roboto';
+  text-align: center;
+  margin: 0;
+
+}
+
+#welcome-text p {
+
+  font-size: 15px;
+  font-size: 'Roboto';
+  margin-left: 10px;
+
+}
+
+#welcome-text {
+
+  margin: 0 !important;
+  margin-top: 50px !important;
+
+}
+
+.open-tutorial-button {
+
+  position: absolute;
+  width: auto;
+  height: auto;
+  z-index: 21;
+  bottom: 10px;
+  right: 20px;
+  background-color: #1f70f2;
+  border-radius: 5px;
+  padding: 5px;
+  transition: background-color 0.3s ease-in-out;
+
+}
+
+.cancel-tutorial-button {
+
+  position: absolute;
+  width: auto;
+  height: auto;
+  z-index: 21;
+  bottom: 10px;
+  left: 20px;
+  background-color: #1f70f2;
+  border-radius: 5px;
+  padding: 5px;
+  transition: background-color 0.3s ease-in-out;
+
+}
+
+#open-tutorial:hover {
+
+  cursor: pointer;
+  background-color: #1f9922 !important
+
+}
+
+#open-tutorial {
+
+  background-color: #29cc2e !important;
+
+
+}
+
+.dialogue-button span {
+
+  font-size: 17px;
+  font-family: 'Roboto Mono';
+  color: white;
+
+
+}
+
+/* #open-tutorial {
+
+  background-color: green !important;
+  right: 0 !important;
+
+}
+
+#cancel-tutorial {
+
+  left: 0 !important;
+
+} */

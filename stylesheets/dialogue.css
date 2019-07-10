@@ -1,0 +1,98 @@
+.dialogue {
+
+  position: absolute;
+  width: 700px;
+  height: 500px;
+  top: 50%;
+  left: 50%;
+  margin-top: -250px;
+  margin-left: -350px;
+  background-color: white;
+  z-index: 20;
+  border-radius: 30px;
+  /* display: none; */
+
+}
+
+.small-dialogue {
+
+  position: absolute;
+  width: 400px;
+  height: 200px;
+  top: 50%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: -200px;
+  background-color: white;
+  z-index: 20;
+  border-radius: 30px;
+
+}
+
+.overlay {
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+  z-index: 19;
+  /* display: none; */
+}
+
+.dialogue-content {
+
+  width: 100%;
+  height: 100%;
+  border: none;
+
+}
+
+.dialogue-heading {
+
+  margin-top: 0;
+  font-family: 'Roboto Mono';
+  font-size: 40px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 200px;
+  text-align: center;
+  margin-left: -100px;
+
+}
+
+.save-options-button {
+
+  position: absolute;
+  width: auto;
+  height: auto;
+  z-index: 21;
+  bottom: 20px;
+  right: 20px;
+  background-color: #1f70f2;
+  border-radius: 5px;
+  padding: 5px;
+  transition: background-color 0.3s ease-in-out;
+
+}
+
+.dialogue-button:hover {
+
+  cursor: pointer;
+  background-color: #134aa1;
+
+
+}
+
+.dialogue-button span {
+
+  font-size: 17px;
+  font-family: 'Roboto Mono';
+  color: white;
+
+
+}

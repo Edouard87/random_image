@@ -1,0 +1,29 @@
+.dialogue-data {
+
+  font-family: 'Roboto Mono';
+  font-size: 20px;
+  margin-top: 50px;
+  margin-left: 20px;
+
+
+}
+
+#random-image-check {
+
+  width: 1px;
+  height: 1px;
+
+}
+
+.explanation {
+
+  font-size: 15px;
+  font-family: "Roboto";
+
+}
+
+.setting-option {
+
+  margin-top: 50px;
+
+}
