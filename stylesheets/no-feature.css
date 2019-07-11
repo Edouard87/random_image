@@ -1,0 +1,33 @@
+.no-feature-content {
+
+  width: 300px;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  margin-left: -150px;
+
+
+}
+
+.no-feature-content h2 {
+
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 20px;
+
+}
+
+.no-feature-button {
+
+  position: absolute;
+  width: auto;
+  height: auto;
+  z-index: 21;
+  bottom: 10px;
+  right: 20px;
+  background-color: #1f70f2;
+  border-radius: 5px;
+  padding: 5px;
+  transition: background-color 0.3s ease-in-out;
+
+}

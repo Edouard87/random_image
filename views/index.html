@@ -9,12 +9,17 @@
     <link rel="stylesheet" href="../stylesheets/dialogue.css">
     <link rel="stylesheet" href="../stylesheets/welcome-menu.css">
     <link rel="stylesheet" href="../stylesheets/help.css">
+    <link rel="stylesheet" href="../stylesheets/no-feature.css">
     <script type="text/javascript" src="../libraries/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="../plugins/js.cookie.min.js"></script>
     <script type="text/javascript" src="../scripts/dialogue.js"></script>
     <script type="text/javascript" src="../scripts/images.js"></script>
     <script type="text/javascript" src="../scripts/menu.js"></script>
     <script type="text/javascript" src="../scripts/welcome-menu.js"></script>
+    <script type="text/javascript" src="../scripts/help-menu.js"></script>
+    <script type="text/javascript" src="../scripts/no-feature.js"></script>
+    <script type="text/javascript" src="../scripts/information.js"></script>
+    <script type="text/javascript" src="../scripts/download.js"></script>
     <title>Random Image Generator</title>
   </head>
   <body>
@@ -88,6 +93,24 @@
         </div>
       </div>
     </div>
+    <div id="no-feature-wrapper" class="dialogue-wrapper">
+      <div class="overlay">
+      </div>
+      <div class="small-dialogue">
+        <h2 class="dialogue-heading">Error</h2>
+        <div id="no-feature-x" class="x-icon-wrapper">
+          <div class="x-icon-container">
+            <img src="../images/x-symbol.png" alt="">
+          </div>
+        </div>
+        <div class="no-feature-content">
+          <h2>This feature has not yet been Implemented</h2>
+        </div>
+        <div id="no-feature-okay" class="no-feature-button dialogue-button">
+          <span>Okay</span>
+        </div>
+      </div>
+    </div>
     <div class="menu-button">
       <div class="menu-button-wrapper">
         <img class="menu-icon" src="../images/menu-icon.png" alt="">
@@ -104,7 +127,7 @@
           <div class="menu-header">
             <h1>Pretty Random Image Generator</h1>
             <h2>By William and Edouard</h2>
-            <h3>Using Google Images</h3>
+            <h3>Using Pixabay</h3>
           </div>
           <div class="menu-options">
             <hr>
@@ -135,14 +158,13 @@
         </div>
       </div>
       <div class="menu-right">
-
       </div>
     </div>
     <div class="main-page">
       <div class="menu">
         <h1>Pretty Random Image Generator</h1>
         <h2>By William and Edouard</h2>
-        <h3>Using Google Images</h3>
+        <h3>Using Pixabay</h3>
       </div>
       <div class="image-generator">
         <div class="panel-left panel">
@@ -166,21 +188,25 @@
             </div>
           </div>
           <div class="button-tray">
-            <img id="left-arrow" class="icon-button" src="../images/arrow-left.png" alt="">
-            <img class="icon-button" src="../images/download-icon.png" alt="">
-            <img id="right-arrow" class="icon-button" src="../images/arrow-right.png" alt="">
-              <div class="right">
-              </div>
+            <div class="tooltip-button">
+              <img id="left-arrow" class="icon-button" src="../images/arrow-left.png" alt="">
+              <span class="tooltip">Previous</span>
+            </div>
+            <div id="download" class="tooltip-button">
+              <img class="icon-button" src="../images/download-icon.png" alt="">
+              <span class="tooltip">Download</span>
+            </div>
+            <div class="tooltip-button">
+              <img id="right-arrow" class="icon-button" src="../images/arrow-right.png" alt="">
+              <span class="tooltip">Next</span>
+            </div>
+          </div>
+          <div class="watermark">
+            <h2>This app is powered by</h2>
+            <img src="../images/pixabay-logo.svg" onclick="location.href='https://pixabay.com/'" alt="">
           </div>
         </div>
       </div>
     </div>
-
-    <template id="settings-content">
-
-    </template>
-
-
-
   </body>
 </html>
